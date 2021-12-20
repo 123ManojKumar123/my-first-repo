@@ -24,7 +24,8 @@ export class TimerComponent implements OnInit {
       console.log('paused');
 
     } else {
-      console.log('lol');
+      console.log('lol'); 
+      //test
       this.counter$ = timer(0,1000).pipe(take(this.timerValue),map(()=> --this.timerValue));
 
     //    this.suscribe = this.counter$.pipe(
