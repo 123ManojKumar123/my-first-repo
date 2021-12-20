@@ -1,0 +1,15 @@
+.timer-wrapper {
+    .row{
+        width: 100%;
+        display: flex;
+        section {
+            width: 50%;
+        }
+        .border {
+            margin: auto;
+            border: 3px solid #333;
+            margin: 1%;
+            text-align: center;
+        }
+    }
+}
