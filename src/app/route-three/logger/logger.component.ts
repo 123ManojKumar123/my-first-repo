@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-logger',
@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoggerComponent implements OnInit {
 
+  @Input()logList!:string[];
   constructor() { }
 
   ngOnInit(): void {

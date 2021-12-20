@@ -8,8 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class RouteTwoComponent implements OnInit {
 
   constructor() { }
-
+  widthVal="25";
   ngOnInit(): void {
   }
 
+  changeLayout(type:string) {
+    this.widthVal = type === 'list'? '100': '25';
+  }
 }

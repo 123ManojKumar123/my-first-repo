@@ -3,18 +3,23 @@
         <section class="count-down-view border">
             <h3>Count Down Timer</h3>
             <!-- {{timerValue}} -->
-            <p>1000</p>
+            <p>{{timerVal}}</p>
+            <!-- counterTime -->
         </section>
         <section class="border">
-            <app-timer></app-timer>
+            <app-timer 
+            (counterTime)="GetTimerValue($event)"
+            (updatePause)="updateCount($event,'pause')"
+            (updateResume)="updateCount($event,'resume')"
+            (resetData)="resetData()"></app-timer>
         </section>
     </div>
     <div class="row">
         <section>
-            <app-logger></app-logger>
+            <app-logger [logList]="logData"></app-logger>
         </section>
         <section>
-            <app-counter></app-counter>
+            <app-counter [pauseVal]="pauseCounter" [startVal]="startCounter"></app-counter>
         </section>
     </div>
 

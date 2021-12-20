@@ -1,1 +1,7 @@
-<p>route-six works!</p>
+<div class="container">
+
+    <app-auto-scroll (scrolled)="onScroll()">
+      <div *ngFor="let x of dynamicArray$ | async;let indexOfelement=index" (click)="createAlert(indexOfelement)" class="const-div">{{x}}</div>
+    </app-auto-scroll>
+
+ </div>

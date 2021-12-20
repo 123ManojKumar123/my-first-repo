@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-counter',
@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./counter.component.scss']
 })
 export class CounterComponent implements OnInit {
-
+  @Input() pauseVal:number | undefined;
+  @Input() startVal:number |undefined;
   constructor() { }
 
   ngOnInit(): void {
