@@ -1,0 +1,29 @@
+*{
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+::ng-deep{
+    body{
+        margin: 0;
+    }
+}
+
+.app-container {
+    .app-header nav ul {
+        box-sizing: border-box;
+        display:flex;
+        justify-content: space-around;
+        background-color: bisque;
+        li, a{
+            padding: 14px;
+            text-decoration: none;
+            list-style: none;
+            cursor: pointer;
+        }
+        li:hover,li:active {
+            background-color: cadetblue;
+        }
+    }
+}
