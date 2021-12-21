@@ -1,0 +1,15 @@
+.counter-wrapper{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+    justify-content: center;
+    .box-shade {
+        margin: 10px;
+        span {
+            font-size: 2rem;
+        }
+        p {
+            font-size: 1rem;
+        }
+    }
+}

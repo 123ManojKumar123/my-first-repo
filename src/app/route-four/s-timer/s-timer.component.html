@@ -1,0 +1,7 @@
+<section class="right-timer-section">
+    <label>Enter Timer Value</label><input class="timer-input" type="number" [(ngModel)]="timerValue" (ngModelChange)="updateTimer($event)"/>
+    <div class="btn-grp">
+        <button (click)=" startCounter()">Start/Pause</button>
+        <button (click)="resetCounter()">Reset</button>
+    </div>
+</section>
