@@ -9,106 +9,106 @@ import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
 export class RouteFiveComponent implements OnInit {
   rows:any =[
     {
+      "Name": "Dorothy",
+      "Class": 2,
       "Section": "secB",
-      "Name": "Delacruz",
-      "sub1": 40,
+      "sub1": 17,
+      "sub2": 18,
+      "sub3": 20,
+      "sub4": 6,
+      "id": 1
+    },
+    {
+      "Name": "Nina",
+      "Class": 8,
+      "Section": "secB",
+      "sub1": 18,
       "sub2": 21,
-      "sub3": 16,
-      "sub4": 31,
-      "id": 1,
-      "Class": 10
+      "sub3": 23,
+      "sub4": 40,
+      "id": 8
     },
     {
-      "Section": "secB",
-      "Name": "Vega",
-      "sub1": 26,
-      "sub2": 8,
-      "sub3": 40,
-      "sub4": 11,
-      "id": 11,
-      "Class": 5
-    },
-    {
-      "Section": "secB",
-      "Name": "Elisabeth",
-      "sub1": 12,
-      "sub2": 28,
-      "sub3": 22,
-      "sub4": 27,
-      "id": 6,
-      "Class": 11
-    },
-    {
-      "Section": "secB",
-      "Name": "Charlotte",
-      "sub1": 21,
-      "sub2": 37,
-      "sub3": 38,
-      "sub4": 34,
-      "id": 11,
-      "Class": 2
-    },
-    {
-      "Section": "secB",
-      "Name": "Rene",
-      "sub1": 12,
-      "sub2": 30,
-      "sub3": 7,
-      "sub4": 10,
-      "id": 5,
-      "Class": 7
-    },
-    {
-      "Section": "secB",
       "Name": "Osborn",
-      "sub1": 5,
-      "sub2": 28,
-      "sub3": 36,
-      "sub4": 31,
-      "id": 7,
-      "Class": 11
+      "Class": 6,
+      "Section": "secB",
+      "sub1": 40,
+      "sub2": 18,
+      "sub3": 15,
+      "sub4": 14,
+      "id": 3
     },
     {
+      "Name": "Aisha",
+      "Class": 5,
       "Section": "secB",
-      "Name": "Kirkland",
-      "sub1": 15,
-      "sub2": 14,
-      "sub3": 17,
-      "sub4": 21,
-      "id": 11,
-      "Class": 2
+      "sub1": 19,
+      "sub2": 25,
+      "sub3": 38,
+      "sub4": 3,
+      "id": 7
     },
     {
+      "Name": "Hurley",
+      "Class": 9,
       "Section": "secB",
-      "Name": "Tamera",
-      "sub1": 23,
-      "sub2": 13,
-      "sub3": 40,
-      "sub4": 7,
-      "id": 4,
-      "Class": 4
-    },
-    {
-      "Section": "secB",
-      "Name": "Olsen",
-      "sub1": 33,
-      "sub2": 33,
-      "sub3": 16,
-      "sub4": 8,
-      "id": 11,
-      "Class": 10
-    },
-    {
-      "Section": "secB",
-      "Name": "Bishop",
-      "sub1": 29,
-      "sub2": 38,
-      "sub3": 10,
+      "sub1": 12,
+      "sub2": 9,
+      "sub3": 9,
       "sub4": 26,
-      "id": 4,
-      "Class": 2
+      "id": 8
+    },
+    {
+      "Name": "Jaime",
+      "Class": 9,
+      "Section": "secB",
+      "sub1": 8,
+      "sub2": 22,
+      "sub3": 30,
+      "sub4": 13,
+      "id": 1
+    },
+    {
+      "Name": "Giles",
+      "Class": 7,
+      "Section": "secB",
+      "sub1": 23,
+      "sub2": 32,
+      "sub3": 15,
+      "sub4": 33,
+      "id": 4
+    },
+    {
+      "Name": "Armstrong",
+      "Class": 10,
+      "Section": "secB",
+      "sub1": 10,
+      "sub2": 26,
+      "sub3": 13,
+      "sub4": 11,
+      "id": 2
+    },
+    {
+      "Name": "Colon",
+      "Class": 7,
+      "Section": "secB",
+      "sub1": 38,
+      "sub2": 5,
+      "sub3": 26,
+      "sub4": 12,
+      "id": 10
+    },
+    {
+      "Name": "Jean",
+      "Class": 2,
+      "Section": "secB",
+      "sub1": 28,
+      "sub2": 13,
+      "sub3": 10,
+      "sub4": 25,
+      "id": 3
     }
-  ]
+  ];
   headers = [];
   sortedColumn!:string;
   order!:string;

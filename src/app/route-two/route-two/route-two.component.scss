@@ -9,3 +9,16 @@ mat-toolbar {
 .content > mat-card {
     margin-bottom: 16px;
 }
+
+.text-center{
+    text-align: center;
+}
+
+::ng-deep {
+    .mat-select-value{
+        max-width: 100% !important;
+    }
+    .mat-select-placeholder {
+        color: #fff;
+    }
+}

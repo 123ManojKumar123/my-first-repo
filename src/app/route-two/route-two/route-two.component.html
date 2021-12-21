@@ -6,25 +6,25 @@
         <button mat-button (click)="changeLayout('list')">
           <mat-icon>menu</mat-icon>
         </button>
+        <mat-select (selectionChange)="sortBy($event.value)" placeholder="select">
+          <mat-option value="PLH">Price Low to high</mat-option>
+          <mat-option value="PHL">Price High to Low</mat-option>
+          <mat-option value="default">Default</mat-option>
+          <mat-option value="2by2">Grid2*2</mat-option>
+        </mat-select>
     </div>
   </mat-toolbar>
   <div class="content">
     <div fxLayout="row wrap" fxLayoutGap="16px grid">
-      <div [fxFlex]="widthVal+'%'" *ngFor="let num of [1,2,3,4,5,6,7]">
+      <div [fxFlex]="widthVal+'%'" *ngFor="let product of products; let i=index">
         <mat-card class="mat-elevation-z4">
-          <mat-card-header>
-            <mat-card-title>Mountains {{num}}</mat-card-title>
-          </mat-card-header>
-          <img mat-card-image src="./../assets/images/mountains.jpg">
+          <h2 class="text-center">{{product.Name}}</h2>
           <mat-card-content>
             <p>
-              The Himalayas is a mountain range in Asia.
+              {{product.Name}} price is <strong>{{product.price}}</strong>
             </p>
+            <p>Product Id: {{product.id}}</p>
           </mat-card-content>
-          <mat-card-actions>
-            <button mat-button>LIKE</button>
-            <button mat-button>SHARE</button>
-          </mat-card-actions>
         </mat-card>
       </div>
     </div>
