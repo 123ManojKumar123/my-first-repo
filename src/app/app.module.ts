@@ -25,6 +25,10 @@ import { TimerComponent } from './route-three/timer/timer.component';
 import { LoggerComponent } from './route-three/logger/logger.component';
 import { CounterComponent } from './route-three/counter/counter.component';
 import { AutoScrollComponent } from './route-six/auto-scroll/auto-scroll.component';
+import { SCounterComponent } from './route-four/s-counter/s-counter.component';
+import { SLoggerComponent } from './route-four/s-logger/s-logger.component';
+import { STimerComponent } from './route-four/s-timer/s-timer.component';
+import { SharedService } from './route-four/shared.service';
 
 const appRoutes:Routes = [
   {path:'', component:RouteOneComponent},
@@ -51,7 +55,10 @@ const appRoutes:Routes = [
     TimerComponent,
     LoggerComponent,
     CounterComponent,
-    AutoScrollComponent
+    AutoScrollComponent,
+    SCounterComponent,
+    SLoggerComponent,
+    STimerComponent
   ],
   imports: [
     BrowserModule,
@@ -65,7 +72,7 @@ const appRoutes:Routes = [
     MatButtonModule,
     MatIconModule
   ],
-  providers: [],
+  providers: [SharedService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

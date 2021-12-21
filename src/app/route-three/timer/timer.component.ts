@@ -1,6 +1,6 @@
 import { Component, OnInit, Output,EventEmitter } from '@angular/core';
-import { BehaviorSubject, NEVER, Observable, Observer, Subject, timer } from "rxjs";
-import { map, switchMap, take, tap } from "rxjs/operators";
+import { BehaviorSubject, NEVER, Observable, Observer, timer } from "rxjs";
+import { map, switchMap } from "rxjs/operators";
 
 function timerWithPause(
   starterStopper: Observable<boolean>,

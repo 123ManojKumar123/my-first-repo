@@ -1,1 +1,14 @@
-<p>route-five works!</p>
+<table id="users">
+  <tr>
+    <th *ngFor = "let column of getHeaders()" (click)="sortBy(column)">
+      {{column}}
+    </th>
+  </tr>
+
+  <tr *ngFor = "let row of rows">
+    <td *ngFor = "let column of getHeaders()">
+      {{row[column]}}
+    </td>
+  </tr>
+
+</table>
