@@ -19,8 +19,6 @@ import { RouteThreeComponent } from './route-three/route-three/route-three.compo
 import { RouteFourComponent } from './route-four/route-four/route-four.component';
 import { RouteFiveComponent } from './route-five/route-five/route-five.component';
 import { RouteSixComponent } from './route-six/route-six/route-six.component';
-import { RouteSevenComponent } from './route-seven/route-seven/route-seven.component';
-import { RouteEightComponent } from './route-eight/route-eight/route-eight.component';
 import { TimerComponent } from './route-three/timer/timer.component';
 import { LoggerComponent } from './route-three/logger/logger.component';
 import { CounterComponent } from './route-three/counter/counter.component';
@@ -36,9 +34,7 @@ const appRoutes:Routes = [
   {path:'route-three', component:RouteThreeComponent},
   {path:'route-four', component:RouteFourComponent},
   {path:'route-five', component:RouteFiveComponent},
-  {path:'route-six', component:RouteSixComponent},
-  {path:'route-seven', component:RouteSevenComponent},
-  {path:'route-eight', component:RouteEightComponent}
+  {path:'route-six', component:RouteSixComponent}
 ]
 
 @NgModule({
@@ -50,8 +46,6 @@ const appRoutes:Routes = [
     RouteFourComponent,
     RouteFiveComponent,
     RouteSixComponent,
-    RouteSevenComponent,
-    RouteEightComponent,
     TimerComponent,
     LoggerComponent,
     CounterComponent,
